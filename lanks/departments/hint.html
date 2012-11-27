@@ -1,0 +1,787 @@
+<p>{literal}</p>
+<script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134705026278533542022"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#vrn").hide();
+        $("#volgograd").hide();
+        $("#ekat").hide();
+        $("#krasnodar").hide();
+        $("#krasnoyarsk").hide();
+        $("#moscow").hide();
+        $("#nn").hide();
+        $("#novosib").hide();
+        $("#orenburg").hide();
+        $("#perm").hide();
+        $("#rnd").hide();
+        $("#samara").hide();
+        $("#spb").hide();
+        $("#saratov").hide();
+        $("#serpuhov").hide();
+        $("#toljatti").hide();
+        $("#tumen").hide();
+        $("#chelyabinsk").hide();
+    });
+
+    old_obj=null;
+    var i= new Array();
+    for (var j=0; j<20;j++)
+    {
+        i[j]=0;
+    }
+
+    function selector(obj)
+    {
+        if (old_obj!=null)
+            $("#"+old_obj).slideToggle(1000);
+        $("#"+obj.value).slideToggle(1000);
+        old_obj=obj.value;
+
+        switch (obj.value)
+        {
+            case "volgograd": if (i[0]==0){ i[0]++}; break;
+            case "vrn": if (i[1]==0){fid_134705026278533542022(ymaps); i[1]++}; break;
+            case "ekat": if (i[2]==0){fid_134867117773098623220(ymaps); i[2]++}; break;
+            case "krasnodar": if (i[3]==0){fid_134867239529152282539(ymaps); i[3]++}; break;
+            case "krasnoyarsk": if (i[4]==0){fid_134867305168391682447(ymaps); i[4]++}; break;
+            case "moscow": if (i[15]==0){fid_134876127752061982428(ymaps); i[15]++}; break;
+            case "nn": if (i[5]==0){fid_134867381238981752407(ymaps); i[5]++}; break;
+            case "novosib": if (i[6]==0){fid_134867391618188711886(ymaps); i[6]++}; break;
+            case "orenburg": if (i[7]==0){fid_134867468919171611524(ymaps); i[7]++}; break;
+            case "perm": if (i[8]==0){fid_134867525138926901536(ymaps); i[8]++}; break;
+            case "rnd": if (i[9]==0){fid_134875710778373671389(ymaps); i[9]++}; break;
+            case "samara": if (i[10]==0){fid_134875806127142031400(ymaps); i[10]++}; break;
+            case "spb": if (i[16]==0){fid_13487600333152801469(ymaps); i[16]++}; break;
+            case "saratov": if (i[11]==0){fid_134875817639953381751(ymaps); i[11]++}; break;
+            case "serpuhov": if (i[12]==0){ i[12]++}; break;
+            case "toljatti": if (i[13]==0){fid_134875869784235841402(ymaps); i[13]++}; break;
+            case "tumen": if (i[13]==0){fid_134884554346326651368(ymaps); i[13]++}; break;
+            case "chelyabinsk": if (i[14]==0){fid_134875970113952281372(ymaps); i[14]++}; break;
+        }
+    }
+
+</script>
+<p>{/literal}</p>
+<div style="position:relative; display: block; height:1138px;"><center> <img src="images/filials/map.jpg" alt="" /><br />
+    <select id="sel" onChange="selector(this)">
+        <option value="def">Выберите город</option>
+        <option value="volgograd">Волгоград</option>
+        <option value="vrn">Воронеж</option>
+        <option value="ekat">Екатеринбург</option>
+        <option value="krasnodar">Краснодар</option>
+        <option value="krasnoyarsk">Красноярск</option>
+        <option value="moscow">Москва</option>
+        <option value="nn">Нижний Новгород</option>
+        <option value="novosib">Новосибирск</option>
+        <option value="orenburg">Оренбург</option>
+        <option value="perm">Пермь</option>
+        <option value="rnd">Ростов-на-Дону</option>
+        <option value="samara">Самара</option>
+        <option value="spb">Санкт-Петербург</option>
+        <option value="saratov">Саратов</option>
+        <option value="serpuhov">Серпухов</option>
+        <option value="toljatti">Тольятти</option>
+        <option value="tumen">Тюмень</option>
+        <option value="chelyabinsk">Челябинск</option>
+    </select> </center>
+<div id="vrn"><center>             <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Воронеж.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 394063<br />
+        Улица: 25 Января<br />
+        Дом: 14а<br />
+        Офис: 8<br />
+        E-mail: andreev@lanks.org, sidorov@lanks.org. <br />
+        Телефон: (473) 261-22-11<br />
+        Факс: (473) 261-22-86<br />
+        Дополнительные номера: (473) 261-21-86, (473) 261-21-87<br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица: ул. Планетная <br />
+        Строение: 26<br />
+        Помещение: территория завода &laquo;Видеофон&raquo;<br />
+        Телефон: (номер телефона или номер офисного телефона который отвечает на вопросы к складу вроде помощи в схеме проезда)<br />
+        Координаты: 51.739679, 39.302731</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134705026278533542022" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134705026278533542022(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134705026278533542022", {
+                center: [39.301401499999926, 51.740571167218086],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([39.301401, 51.739799], {
+                balloonContent: "Склад ООО Ланкс в Воронеже"
+            }, {
+                preset: "twirl#blueDotIcon"
+            }));
+        };
+    </script>   <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="volgograd"><center>             <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Волгоград.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 400075<br />
+        Улица: Серийный Проезд<br />
+        Дом: 5<br />
+        Офис: <br />
+        E-mail: volgograd@lanks.org lanks.volgograd@mail.ru <br />
+        Телефон: <br />
+        Факс: <br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица: <br />
+        Строение: <br />
+        Помещение:<br />
+        Телефон: <br />
+        Координаты:</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}
+    <p>{/literal}</p>
+</div>
+<div id="ekat"><center>             <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Екатеринбург.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 620017<br />
+        Улица: Космонавтов<br />
+        Дом: 11/Б<br />
+        Офис: <br />
+        E-mail: ekat@lanks.org, krukovskiy@lanks.org <br />
+        Телефон: (343) 331-99-67 <br />
+        Факс: (343) 331-99-67<br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Космонавтов<br />
+        Строение: 11/Б<br />
+        Помещение: <br />
+        Телефон: <br />
+        Координаты: 60.606133, 56.868696</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134867117773098623220" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134867117773098623220(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134867117773098623220", {
+                center: [60.606133999999926, 56.868696110543],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([60.606134, 56.868015], {
+                balloonContent: "ООО Ланкс Екатеринбург"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>         <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134867117773098623220"></script>         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="krasnodar"><center>             <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Краснодар.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 350018<br />
+        Улица: Сормовская<br />
+        Дом: 7 Г<br />
+        Офис: <br />
+        E-mail: office.krd@lanks.org <br />
+        Телефон: (861) 210-95-65, 210-95-66 <br />
+        Факс: (861) 210-95-65<br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Сормовская<br />
+        Строение: 7 Г<br />
+        Помещение: <br />
+        Телефон: <br />
+        Координаты: 39.060302, 45.028582</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134867239529152282539" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134867239529152282539(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134867239529152282539", {
+                center: [39.06030250000003, 45.02858207355617],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([39.060303, 45.027699], {
+                balloonContent: "ООО Ланкс Краснодар"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>         <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134867239529152282539"></script>         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="krasnoyarsk"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Красноярск.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 660118<br />
+        Улица: Енисейский тракт<br />
+        Дом: 5<br />
+        Офис: <br />
+        E-mail: krasnoyarsk@lanks.org<br />
+        Телефон: 8-913-175-64-21<br />
+        Факс: <br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  <br />
+        Строение: <br />
+        Помещение: <br />
+        Телефон: <br />
+        Координаты: 92.921814, 56.081690</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134867305168391682447" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134867305168391682447(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134867305168391682447", {
+                center: [92.92181400000001, 56.081690449696254],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([92.921814, 56.080994], {
+                balloonContent: "ООО Ланкс Красноярск"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>     <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134867305168391682447"></script>     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="moscow"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Москва.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 143005<br />
+        Город: Одинцово, ул. Транспортная<br />
+        Дом: 5<br />
+        Офис: <br />
+        E-mail: office.msk@lanks.org <br />
+        Телефон: (495) 591-71-48<br />
+        Факс: (495) 591-71-48<br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица: Транспортная <br />
+        Строение: 5<br />
+        Помещение: <br />
+        Телефон: <br />
+        Координаты: 37.297896, 55.677638</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134876127752061982428" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134876127752061982428(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134876127752061982428", {
+                center: [37.29789630050822, 55.67763859850018],
+                zoom: 17,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([37.29751006241009, 55.677277480020265], {
+                balloonContent: "ООО Ланкс Москва (Одинцово)"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>     <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134876127752061982428"></script>     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="nn"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Нижний Новгород.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 603074<br />
+        Улица: Совхозная <br />
+        Дом: 9 Б<br />
+        Офис: 23<br />
+        E-mail: office.nn@lanks.org<br />
+        Телефон: (312)41-97-35<br />
+        Факс: (312) 41-97-56 <br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Совхозная<br />
+        Строение: 9 Б<br />
+        Помещение: <br />
+        Телефон: <br />
+        Координаты: 43.907702, 56.330570</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134867381238981752407" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134867381238981752407(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134867381238981752407", {
+                center: [43.907702000000015, 56.33126141629816],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([43.907702, 56.33057], {
+                balloonContent: "ООО Ланкс Нижний Новгород"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>         <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134867381238981752407"></script>         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="novosib"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Новосибирск.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 630088<br />
+        Улица: Петухова <br />
+        Дом: 16\1<br />
+        Офис: 2\3<br />
+        E-mail: sampetov.lanks@mail.ru, novosibirsk@lanks.org<br />
+        Телефон: 8(383) 342-10-98, 8-983-301-5231<br />
+        Факс: <br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Троллейная<br />
+        Строение:84\4 <br />
+        Помещение: 7, 8<br />
+        Телефон: <br />
+        Координаты: 82.858562, 54.980221</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134867391618188711886" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134867391618188711886(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134867391618188711886", {
+                center: [82.85856249999993, 54.98022180239657],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([82.858563, 54.979506], {
+                balloonContent: "ООО Ланкс Новосибирск"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>         <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134867391618188711886"></script>         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="orenburg"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Оренбург.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 460000<br />
+        Улица: Мусы Джалиля <br />
+        Дом: 6<br />
+        Офис: <br />
+        E-mail: orenburg@lanks.org , lanks.ornb@mail.ru<br />
+        Телефон: (3532) 98-57-24, (3532) 98-57-26<br />
+        Факс: (3532) 98-57-24, (3532) 98-57-26<br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Мусы Джалиля <br />
+        Строение: 6 <br />
+        Помещение: <br />
+        Телефон: <br />
+        Координаты: 55.073975, 51.764685</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134867468919171611524" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134867468919171611524(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134867468919171611524", {
+                center: [55.07397599999993, 51.764685252673054],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([55.073976, 51.763913], {
+                balloonContent: "ООО Ланкс Оренбург"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>         <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134867468919171611524"></script>         <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="perm"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Пермь.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 614025<br />
+        Улица: Героев Хасана<br />
+        Дом: 76 корпус 1<br />
+        Офис: 15<br />
+        E-mail:lanks.perm@mail.ru<br />
+        Телефон: (342) 240-82-04, 240-96-43 <br />
+        Факс: (342) 240-82-04, 240-96-43<br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Героев Хасана<br />
+        Строение: 76 <br />
+        Помещение: 10<br />
+        Телефон: <br />
+        Координаты: 57.957496, 56.265793</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134867525138926901536" style="width: 450px; height: 350px;  margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134867525138926901536(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134867525138926901536", {
+                center: [56.261467999999965, 57.983876740032294],
+                zoom: 11,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([56.263346, 57.962653], {
+                balloonContent: "ООО Ланск Пермь"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>     <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134867525138926901536"></script>     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="rnd"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Ростов-на-Дону.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 344011<br />
+        Улица: Филимоновская<br />
+        Дом: 78<br />
+        Офис: <br />
+        E-mail: rostov@lanks.org <br />
+        Телефон: (863) 282-62-49 <br />
+        Факс: (863) 282-62-49 <br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Механизаторов<br />
+        Строение: 7 <br />
+        Помещение: <br />
+        Телефон: <br />
+        Координаты: 39.773811, 47.271218</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134875710778373671389" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134875710778373671389(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134875710778373671389", {
+                center: [39.77384349999999, 47.27211259074222],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([39.773843, 47.271266], {
+                balloonContent: "ООО Ланкс Ростов-на-Дону"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>     <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134875710778373671389"></script>     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="samara"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Самара.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 443022<br />
+        Улица: Кабельная<br />
+        Дом: 5<br />
+        Офис: -<br />
+        E-mail: samara@lanks.org  <br />
+        Телефон: (846) 274-18-18<br />
+        Факс: (846) 97-999-87<br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Кабельная<br />
+        Строение:  5<br />
+        Помещение: -<br />
+        Телефон: -<br />
+        Координаты: 50.266857 53.199182</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134875806127142031400" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134875806127142031400(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134875806127142031400", {
+                center: [50.26685799999992, 53.19918235330535],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([50.266858, 53.198435], {
+                balloonContent: "ООО Ланкс Самара"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>     <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134875806127142031400"></script>     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="spb"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Санкт-Перетбург.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 195112<br />
+        Улица: Шаумяна<br />
+        Дом: 4<br />
+        Офис: 322<br />
+        E-mail: spb@lanks.org <br />
+        Телефон: (812) 336-92-44/43 <br />
+        Факс: (812) 336-92-44<br />
+        Дополнительные номера: -<br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Партизанская <br />
+        Строение:  25<br />
+        Помещение: -<br />
+        Телефон: -<br />
+        Координаты: 30.44391, 59.946759</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_13487600333152801469" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_13487600333152801469(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_13487600333152801469", {
+                center: [30.441227999999985, 59.94575386812522],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([30.441228, 59.94513], {
+                balloonContent: "ООО Ланкс Санкт-Петербург"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>     <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_13487600333152801469"></script>     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="saratov"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Саратов.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 410052<br />
+        Улица: проспект 50 лет Октября<br />
+        Дом: 128а<br />
+        Офис: 204, 205а<br />
+        E-mail: saratov@lanks.org <br />
+        Телефон: (8452) 35-12-81<br />
+        Факс: (8452) 35-12-81<br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Сокурский тракт<br />
+        Строение:  <br />
+        Помещение: Территория складов Технониколь<br />
+        Телефон: <br />
+        Координаты: 45.963453 51.618163</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134875817639953381751" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134875817639953381751(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134875817639953381751", {
+                center: [45.96345308492339, 51.61816339233035],
+                zoom: 14,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([45.960199, 51.615057], {
+                balloonContent: "ООО Ланкс Саратов"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>     <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134875817639953381751"></script>     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="serpuhov"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Серпухов.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Инфо: Менеджер работает на дому. Ближайший офис и склад в г.Одинцово (Москва).
+        <br />
+        Улица: -<br />
+        Дом: -<br />
+        Офис:- <br />
+        E-mail: -<br />
+        Телефон: 8 (985) 968-05-57 <br />
+        Факс: -<br />
+        Дополнительные номера: 8 (926) 739-41-40 <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  -<br />
+        Строение:  -<br />
+        Помещение: -<br />
+        Телефон: -<br />
+        Координаты: -</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}
+    <p>{/literal}</p>
+</div>
+<div id="toljatti"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Тольятти.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Инфо: Офиса нет, ближайший офис в г. Самара.<br />
+        Улица: -<br />
+        Дом: -<br />
+        Офис: -<br />
+        E-mail: -<br />
+        Телефон: -<br />
+        Факс: -<br />
+        Дополнительные номера: -<br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  Ботаническая <br />
+        Строение:  20<br />
+        Помещение: -<br />
+        Телефон: -<br />
+        Координаты: 49.299704 53.544639</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134875869784235841402" style="width: 450px; height: 350px;  margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134875869784235841402(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134875869784235841402", {
+                center: [49.299704499999976, 53.54463928788542],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([49.299704, 53.543898], {
+                balloonContent: "ООО Ланкс Тольятти"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>     <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134875869784235841402"></script>     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="tumen"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Тюмень.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 625025<br />
+        Улица: Магнитогорская<br />
+        Дом: 11\1<br />
+        Офис: -<br />
+        E-mail: office.tumen@lanks.org, lanks.tmn@mail.ru<br />
+        Телефон: (3452) 30-33-32<br />
+        Факс: -<br />
+        Дополнительные номера: -<br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  - <br />
+        Строение:  -<br />
+        Помещение: -<br />
+        Телефон: -<br />
+        Координаты: 49.299704 53.544639</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134884554346326651368" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;"></div>
+    <script type="text/javascript">
+        function fid_134884554346326651368(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134884554346326651368", {
+                center: [65.49852099999998, 57.13779117874175],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([65.498521, 57.137114], {
+                balloonContent: "ООО Ланкс Тюмень"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>
+    <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134884554346326651368"></script>
+    <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+<div id="chelyabinsk"><center>         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Coat_of_Arms_of_Voronezh.gif/200px-Coat_of_Arms_of_Voronezh.gif" alt="" height="100" width="100" /><br />
+    <span style="font-size: xx-large; ">Челябинск.</span><br />
+</center>
+    <p><span style="font-size: large; ">Адрес офиса.</span><br />
+        Индекс: 454048<br />
+        Улица: ул. Елькина<br />
+        Дом: 63 В<br />
+        Офис: <br />
+        E-mail: chelyabinsk@lanks.org , lanks74@mail.ru <br />
+        Телефон: (351) 263-11-83<br />
+        Факс: (351) 211-37-83<br />
+        Дополнительные номера: <br />
+        <span style="font-size: large; ">Адрес склада.</span><br />
+        Улица:  ул. Елькина <br />
+        Строение:  63 В<br />
+        Помещение: 2-я линия, склад 8/1<br />
+        Телефон: <br />
+        Координаты: 61.399022 55.157004</p>
+    <span style="font-size: large; ">Схема проезда: </span>{literal}     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_134875970113952281372" style="width: 450px; height: 350px; margin-left: auto; margin-right: auto;">&nbsp;</div>
+    <script type="text/javascript">
+        function fid_134875970113952281372(ymaps) {
+            var map = new ymaps.Map("ymaps-map-id_134875970113952281372", {
+                center: [61.39902299999998, 55.15700413331724],
+                zoom: 16,
+                type: "yandex#map"
+            });
+            map.controls
+                    .add("zoomControl")
+                    .add("mapTools")
+                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+            map.geoObjects
+                    .add(new ymaps.Placemark([61.399023, 55.156291], {
+                balloonContent: "ООО Ланкс Челябинск"
+            }, {
+                preset: "twirl#lightblueDotIcon"
+            }));
+        };
+    </script>     <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134875970113952281372"></script>     <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+    <p>{/literal}</p>
+</div>
+</div>
