@@ -1,0 +1,11 @@
+#container {
+    display: block;
+    background-image: url('/images/car.png');
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border-style: solid;
+    border-color: black;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
