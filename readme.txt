@@ -1,1 +1,1 @@
-My little creenslider -)
+My little sreenslider -)
