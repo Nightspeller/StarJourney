@@ -1,0 +1,23 @@
+{
+  "name": "starjourney",
+  "version": "1.0.0",
+  "description": "My little ScreenSlider -)",
+  "main": "starjourney-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nightspeller/StarJourney.git"
+  },
+  "author": "Serg Nights",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nightspeller/StarJourney/issues"
+  },
+  "homepage": "https://github.com/Nightspeller/StarJourney#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "serve-favicon": "^2.3.0"
+  }
+}
