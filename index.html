@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="js/asteroid.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/background.js"></script>
+    <script type="text/javascript" src="js/resolute.js"></script>
+    <script type="text/javascript" src="js/bullet.js"></script>
+    <script type="text/javascript" src="js/enemy.js"></script>
+    <script type="text/javascript" src="js/bhole.js"></script>
+    <script type="text/javascript" src="js/collision.js"></script>
+    <script type="text/javascript" src="js/e_station.js"></script>
+    <script type="text/javascript" src="js/rect.js"></script>
+    <script type="text/javascript" src="js/bonus.js"></script>
+    <script type="text/javascript" src="js/boss_1.js"></script>
+    <script type="text/javascript" src="js/laser_bullet.js"></script>
+    <script type="text/javascript" src="js/e_laser_cannon.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/modules.js"></script>
+</head>
+<body onload="canvasSpaceGame()">
+<h1>
+    Serj Nights' Star Journey!
+</h1>
+<h3>
+    Use arrow keys to control your ship and "A" to fire.<br>
+    The most important part of a game is to switch your 100% of Energy between Shields (Q), Weapons (W) and Engines (E).<br>
+    Hold the corresponding button to put more Energy toward certain cherecteristics, but beware - more energy you pit to one, less it will be for others. <br>
+    More energy you put to Shields faster they regenerate. Enegrising the weapons will make you shoot faster, while increasing your Engines power will bring you closer toward speed of light and will make a ship smaller.
+</h3>
+<canvas id="myCanvas" width="800" height="500">
+</canvas>
+<br>
+<table>
+    <tbody>
+    <tr>
+        <td>Shields:</td><td><div id="shields"></div></td>
+        <td>Weapons:</td><td><div id="weapons"></div></td>
+        <td>Engines:</td><td><div id="engines"></div></td>
+    </tr>
+    <tr>
+        <td>Energy for Shields:</td><td><div id="e_shields"></div></td>
+        <td>Energy for Weapons:</td><td><div id="e_weapons"></div></td>
+        <td>Energy for Engines:</td><td><div id="e_engines"></div></td>
+    </tr>
+    <tr>
+        <td>Frames:</td><td><div id="time"></div></td>
+        <td>Time (sec):</td><td><div id="sec_time"></div></td>
+        <td>FPS:</td><td><div id="fps"></div></td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<br>
+Help:<div id="help" style="display: inline;"></div><br>
+<input type="button" onclick="window.location.reload()" value="Restart">
+<input type="button" onclick="game_stop()" value="Pause">
+<input type="button" onclick="game_resume()" value="Resume">
+<input type="button" onclick="game_god()" value="God_mode">
+<img id="bang" src="images/bang.png" style="display: none">
+<img id="bhole" src="images/bhole.png" style="display: none">
+<img id="resolute" src="images/resolute.svg" style="display: none">
+<img id="boss1" src="images/boss1.svg" style="display: none">
+<img id="boss1_launch" src="images/boss1_launch.svg" style="display: none">
+<img id="laser_cannon" src="images/laser_cannon.svg" style="display: none">
+<img id="laser_cannon_attack" src="images/laser_cannon_attack.svg" style="display: none">
+<img id="laser_cannon_destroyed" src="images/laser_cannon_destroyed.svg" style="display: none">
+<img id="asteroid" src="images/asteroid.png" style="display: none">
+<img id="cannon" src="images/cannon.svg" style="display: none">
+<img id="cannon_destroyed" src="images/cannon_destroyed.svg" style="display: none">
+<img id="cannon_carriage" src="images/cannon_carriage.svg" style="display: none">
+<img id="cannon_carriage_boss1" src="images/cannon_carriage_boss.svg" style="display: none">
+<img id="cannon_carriage_boss1_destroyed" src="images/cannon_carriage_boss1_destroyed.svg" style="display: none">
+<img id="shield" src="images/shield.svg" style="display: none">
+<img id="type_drones" src="images/modules/type_drones.png" style="display: none">
+<img id="type_weapons" src="images/modules/type_weapons.png" style="display: none">
+<img id="type_protection" src="images/modules/type_protection.png" style="display: none">
+<img id="type_special" src="images/modules/type_special.png" style="display: none">
+<img id="drone_autoattack" src="images/modules/drone_autoattack.png" style="display: none">
+<img id="drone_defence" src="images/modules/drone_defence.png" style="display: none">
+<img id="drone_repair" src="images/modules/drone_repair.png" style="display: none">
+<img id="drone_saving" src="images/modules/drone_saving.png" style="display: none">
+</body>
+</html>
